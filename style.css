@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.header_container {
+  min-height: 100vh;
+  background-image: url('https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/915988c20bba56c0b5691503/pexels-photo-3218467.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: all 0.6 s;
+  transition-delay: 0.01s;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  opacity: 0.3;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header_content {
+  margin: 10px 140px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.header_logo {
+  height: 229px;
+  width: 359px;
+}
+
+.header_title {
+  font-size: 3.85rem;
+  margin-top: 60px;
+}
+
+.header_sub-title {
+  font-size: 16px;
+  width: 60%;
+  line-height: 30px;
+}
+
+.side-menu {
+  visibility: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  top: 0;
+  left: 0;
+  transform: translateX(-300px);
+  background-color: black;
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+@media (max-width: 1400px) {
+  .header_title {
+    font-size: 2.6rem;
+  }
+  .header_sub-title {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header_title {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+  .header_sub-title {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .container {
+    background-attachment: scroll;
+  }
+  .header_content {
+    margin: 10px 80px;
+  }
+}
+
+.menu_container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: #f2f2f2;
+}
+
+.menu_container h2 {
+  font-size: 3rem;
+}
+
+.box_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 74px;
+}
+
+.box {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  line-height: 28px;
+}
+
+.box h3 {
+  font-size: 1.125rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+}
+
+.box p {
+  font-size: 0.95rem;
+}
+
+.🍦_container {
+  background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/e2f38b67aa6e56639487cb0f/ed-min.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.🍦_blank {
+  flex: 0.5;
+}
+
+.🍦_main {
+  flex: 0.5;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.🍦_box {
+  max-width: 140px;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 850px) {
+  .🍦_blank {
+    display: none;
+  }
+  .🍦_main {
+    flex: 1;
+  }
+  .menu_container h2 {
+    font-size: 2rem;
+  }
+  .header_logo {
+    height: 180px;
+    width: 240px;
+  }
+}
+
+@media (max-width: 570px) {
+  .box {
+    padding: 0 100px;
+  }
+  .header_content {
+    margin: 10px 40px;
+  }
+}
